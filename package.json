@@ -1,0 +1,31 @@
+{
+  "name": "forms-based-auth-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "NODE_ENV=development SECRET=fizz DATABASE_URL=postgres://localhost/auth_db PORT=3000 SYNC=true nodemon --ignore 'browser' server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "method-override": "^2.3.6",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "pg": "^6.1.0",
+    "sequelize": "^3.24.3",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-watch": "^4.3.10"
+  }
+}

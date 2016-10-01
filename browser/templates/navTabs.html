@@ -1,0 +1,17 @@
+<ul class='nav nav-tabs'>
+  <li ui-sref-active='active'>
+    <a ui-sref='home'>Home</a>
+  </li>
+    <li ui-sref-active='active' ng-if='user.id'>
+      <a ui-sref='restricted'>Restricted</a>
+    </li>
+    <li ng-if='user.id'>
+        <button ng-click='logout()' class='btn btn-warning'>Logout {{ user.name }}</button>
+    </li>
+  <li ui-sref-active='active' ng-if='!user.id'>
+    <a ui-sref='login'>Login</a>
+  </li>
+  <li  ng-if='!user.id'>
+    <a href='/login/google'>Login through Google</a>
+  </li>
+</ul>

@@ -1,0 +1,9 @@
+<form class='well' name='form'>
+  <div class='form-group'>
+    <input class='form-control' ng-model='credentials.name' name='name' placeholder='name' required />
+  </div>
+  <div class='form-group'>
+    <input type='password' class='form-control' ng-model='credentials.password' required name='password' placeholder='password' />
+  </div>
+  <button ng-disabled='form.$invalid' class='btn btn-primary' ng-click='login()'>Login</button>
+</form>
